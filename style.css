@@ -13,7 +13,6 @@ body {
 @media screen and (max-width:800px) {
     .header {
         display: none;
-        /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
 
@@ -34,7 +33,6 @@ hr {
 @media screen and (max-width:800px) {
     hr {
         width: 100%;
-        /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
 
@@ -78,7 +76,6 @@ hr {
         display: inline-block;
         padding-bottom: 5px;
         font-size: 150%;
-        /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
 
@@ -315,7 +312,23 @@ hr {
 
 .teams-table table tr {
     text-align: center;
+    height: 50px
 }
+
+.teams-table table td.rank,.teams-table table th.rank{
+    width: 10%
+}
+
+.teams-table table td.name,.teams-table table th.name{
+    width: 30%
+}
+.teams-table table td.score,.teams-table table th.score{
+    width: 20%
+}
+
+
+
+
 
 
 /* teams end */

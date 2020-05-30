@@ -315,20 +315,26 @@ hr {
     height: 50px
 }
 
-.teams-table table td.rank,.teams-table table th.rank{
+.teams-table table td.rank,
+.teams-table table th.rank {
     width: 10%
 }
 
-.teams-table table td.name,.teams-table table th.name{
+.teams-table table td.name,
+.teams-table table th.name {
     width: 30%
 }
-.teams-table table td.score,.teams-table table th.score{
+
+.teams-table table td.score,
+.teams-table table th.score {
     width: 20%
 }
 
-
-
-
+@media screen and (max-width:800px) {
+    .teams-table {
+        width: 100%
+    }
+}
 
 
 /* teams end */
@@ -443,14 +449,19 @@ hr {
     color: #28460a;
 }
 
-.photos img {
-    width: 40%;
-    height: 300px;
+.photos>div {
+    width: 45%;
     margin: 10px;
+    display: inline-block;
+}
+
+.photos img {
+    width: 500px;
+    height: 300px;
 }
 
 @media screen and (max-width:800px) {
-    .photos img {
+    .photos>div {
         width: 100%;
     }
 }

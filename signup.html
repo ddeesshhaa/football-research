@@ -26,7 +26,7 @@
     </div>
     <div class="form">
         <div class="container">
-            <form name="reg" action="page_action.php" onSubmit="return reg_validation();">
+            <form name="reg" action="page_action.php" target="_blank" method="post" onSubmit="return reg_validation();">
                 <h1>Sign Up</h1>
                 <hr>
                 <div class="line">
@@ -102,6 +102,7 @@
                                             if (psw_space(psw)) {
                                                 if (cpsw_validation(psw, cpsw)) {
                                                     alert('Thanks for registeration!');
+                                                    window.location.href = 'index.html';
                                                     return true;
                                                 }
                                             }
